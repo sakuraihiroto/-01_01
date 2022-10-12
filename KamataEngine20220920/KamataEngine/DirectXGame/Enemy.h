@@ -22,7 +22,13 @@ public:
 	/// <summary>
 	/// 描画
 	/// </summary>
-	void Draw(const ViewProjection& viewProjection);
+	void Draw(ViewProjection& viewProjection);
+
+	//衝突判定
+	void OnCollision();
+
+	// ワールド座標を取得
+	Vector3 GetWorldPosition();
 
 private:
 	// ワールド変換データ
@@ -33,4 +39,7 @@ private:
 	uint32_t textureHandle_ = 0u;
 	//速度
 	Vector3 velocity_;
+	//衝突フラグ
+	int flag = 0;
+
 };

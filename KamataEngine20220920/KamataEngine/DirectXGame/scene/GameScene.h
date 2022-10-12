@@ -9,6 +9,8 @@
 #include "Sprite.h"
 #include "ViewProjection.h"
 #include "WorldTransform.h"
+#include "Player.h"
+#include "Enemy.h"
 
 /// <summary>
 /// ゲームシーン
@@ -41,6 +43,12 @@ class GameScene {
 	/// </summary>
 	void Draw();
 
+	/// <summary>
+	/// 衝突判定と対応
+	/// </summary>
+	void CheakAllCollisions();
+
+
   private: // メンバ変数
 	DirectXCommon* dxCommon_ = nullptr;
 	Input* input_ = nullptr;
@@ -62,4 +70,8 @@ class GameScene {
 	//ビュープロジェクション
 	ViewProjection viewProjection_;
 
+	//自キャラ
+	Player* player_ = nullptr;
+	//敵キャラ
+	Enemy* enemy_ = nullptr;
 };

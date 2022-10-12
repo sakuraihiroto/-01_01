@@ -103,6 +103,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="matWorld.cpp" />
     <ClCompile Include="player.cpp" />
+    <ClCompile Include="playerBullet.cpp" />
     <ClCompile Include="scene\GameScene.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +138,7 @@
     <ClInclude Include="math\Vector4.h" />
     <ClInclude Include="matWorld.h" />
     <ClInclude Include="player.h" />
+    <ClInclude Include="playerBullet.h" />
     <ClInclude Include="scene\GameScene.h" />
   </ItemGroup>
   <ItemGroup>
